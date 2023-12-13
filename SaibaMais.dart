@@ -93,8 +93,8 @@ class SaibaMais extends StatelessWidget {
                   onPressed: () async {
                     final player = AudioPlayer();
                     final audioCache = AudioCache();
-                    await audioCache.load('assets/thank-you.mp3');
-                    await player.play(AssetSource('assets/thank-you.mp3'));
+                    await audioCache.load('thank-you.mp3');
+                    await player.play(AssetSource('thank-you.mp3'));
 
                     Navigator.push(
                         context,
